@@ -1,6 +1,6 @@
 express = require('express')
 hbs = require('hbs')
-
+const port = process.env.PORT || 3001
 app = express();
 app.use(express.static(__dirname + '/public'))
 
@@ -34,4 +34,4 @@ app.get('/about',(req,res)=>{
     })
 })
 
-app.listen(3001,()=>{});
+app.listen(port,()=>{});
