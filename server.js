@@ -34,4 +34,9 @@ app.get('/about',(req,res)=>{
     })
 })
 
+app.get('/project',(req,res)=>
+{
+    res.render('project.hbs',{title:"project"});
+})
+
 app.listen(port,()=>{});
